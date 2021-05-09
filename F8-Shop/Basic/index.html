@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!-- 
+ 1 h1 -> h6 - headding
+ 2 p
+ 3 img
+ 4 a -> anchor
+ 5 ul,li - unordered list,list item
+ 6 table
+ 7 input
+ 8 button
+ 9 div
+ -->
+<html>
+<!-- Phần đầu -->
+
+<head>
+    <title>F8- Shop </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <style>
+
+        /* html {
+            font-size: 50px;
+        }
+
+        .box {
+            width: calc(80% + 20%);
+            height: 50vh;
+            background-color: rgba(126, 133, 172, 0.192);
+        }
+
+        .test {
+            width: 100%;
+        }
+        
+        h1 {
+            font-size: 1em;
+        }
+
+        .box::after {
+            content: attr(data-title);
+        }
+
+        a::after {
+            content: "(" attr(href) ")";
+        } */
+
+        .box {
+            background-color: violet;
+        }
+
+        h1:active {
+            color: aqua;
+        }
+
+        li:first-child {
+            color: chocolate;
+        }
+
+        li:last-child {
+            color: darkred;
+            font-size: 40px;
+        }
+
+        .box::before {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+        }
+
+        .box::after {
+            content: "Xin chào";
+            color: red;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+        }
+
+        h1::first-line {
+            font-size: 50px;
+            color: rosybrown;
+        }
+
+        ::selection {
+            color: slateblue;
+            background-color: slategrey;
+        }
+
+        /* vw, vh */
+        /* viewport */
+    </style>
+
+</head>
+
+<!-- Phần thân -->
+
+<body>
+
+    <!-- <div>
+        <h1>Làm được 4 điều này, Mourinho sẽ biến Roma thành thế lực đáng sợ</h1>
+        <p>Chiến lược gia người Bồ được nhiều CĐV kỳ vọng giúp Giallorossi thay da đổi thịt, lấy lại ánh hào quang năm
+            xưa</p>
+        <img width="500" src="https://wallpaperaccess.com/full/1111994.jpg" alt="Ảnh naruto">
+        <br>
+        <a href="https://fullstack.edu.vn/">Tối trang học lập trình</a>
+        <ul>
+            <li>Timo Werner: 'Thiago Silva đã trực tiếp xin lỗi tôi'</li>
+            <li>Tận dụng lợi thế, Arsenal ủ mưu "cướp" mục tiêu của Liverpool</li>
+        </ul>
+
+        <table>
+            <thead>
+                <th>Stt</th>
+                <th>Name</th>
+                <th>Age</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>HuyHa</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>HuyHa 2</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>HuyHa 2</td>
+                    <td>19</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <input type="text">
+        <input type="checkbox">
+        <input name="age" type="radio">
+        <input name="age" type="radio">
+        <input name="age" type="radio">
+    </div>
+    <h1 title="Đây là tiêu đề">Attribute?</h1> -->
+    <!-- <div>
+        <h1 style="color: red;font-size: 16px;">CSS in HTML?</h1>
+        <ol>
+            <li>Internal</li>
+            <li>External</li>
+            <li>Inline</li>
+         </ol>
+    </div> -->
+    <!-- <div>
+        <h1 id="first-headding">CSS selectors ?</h1>
+        <h1 class="second-headding">CSS selectors ?</h1>
+        <h1 class="second-headding second-headding2">CSS selectors ?</h1>
+        <h2 class="second-headding">ID & Class?</h2>
+    </div> -->
+<!-- Trường hợp .children là con trực tiếp của .parent -->
+<!-- <div class="parent">
+    <div class="children">Children 1</div>
+    <div class="children">Children 2</div>
+    <div class="children">Children 3</div>
+</div> -->
+
+<!-- Hoặc các .children nằm rải rác, miễn là con của .parent -->
+<!-- <p>SỐ 2</p>
+<div class="parent">
+    <div class="children">Children 1</div>
+
+    <div class="other-div">
+        <div class="children">Children 2</div>
+        
+        <div class="other-div">
+            <div class="children">Children 3</div>
+        </div>
+    </div>
+</div>
+<div> <span class="test">test thui :v <span>sdsds</span></span>   </div>
+
+<div>
+    <div class="container">
+        <div>
+            <div class="box">A box</div>
+        </div>
+    </div>
+</div> -->
+<!-- <div>
+    <h1 style="color: sandybrown !important;" id="heading-id" class="heading-class">Độ ưa tiên</h1>
+    <ol>
+        <li>Internal và External</li>
+        <li>Inline - 1000</li>
+        <li>#ID - 100</li>
+        <li>Class - 10</li>
+        <li>Tag - 1</li>
+        <li>Equal specificity</li>
+        <li>Universal selector and inherited</li>
+    </ol>
+</div> -->
+<!-- <h1>CSS Variable?</h1>
+<h2>CSS Variable?</h2>
+<h3>CSS Variable?</h3> -->
+    <!-- <a href="https://fullstack.edu.vn/">Học lập trình</a>
+    <div class="test">
+        <div class="box" data-title="Đây là box màu hồng !"></div>
+    </div>
+
+    <div>
+        <h1>CSS units</h1>
+    </div> -->
+    <div>
+        <div  class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Css pseudo-element <br>DÒng thứ 2</h1>
+        <ul>
+            <li>:before</li>
+            <li>:after</li>
+            <li>:first-line</li>
+            <li>:first-letter</li>
+            <li>:selection</li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+/* html {
+    color: silver;
+}
+
+h1 {
+    color: red !important;
+}
+
+h1 {
+    color: rosybrown;
+} */
+
+/* :root {
+    --textColorHuyHa : rgb(128, 0, 90);
+}
+
+h1 {
+    --myColorOfHuyHA : blue;
+    color: var(--myColorOfHuyHA) ;
+}
+
+h2 {
+    color: var(--textColorHuyHa) ;
+}
+
+h3 {
+    color: var(--textColorHuyHa) ;
+} */
+
+/* #first-headding {
+    color: red;
+}:
+
+.second-headding.second-headding2 {
+    color: blanchedalmond;
+    font-size: 30px;
+}
+
+
+div.children {
+    color: blueviolet;
+}
+
+div .other-div {
+   background-color: cornflowerblue;
+}
+
+div > .children {
+    color: darkblue;
+}
+
+div > .box {
+    color: darkcyan;
+} */
+
+
