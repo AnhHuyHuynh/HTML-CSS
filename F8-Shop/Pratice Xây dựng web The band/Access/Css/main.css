@@ -1,0 +1,363 @@
+/* Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+/* Common */
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+   width: calc(100% / 3); 
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    padding: 11px 17px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 16px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.pull-right {
+    float: right;
+}
+
+/* Main */
+#main  {
+
+}
+
+/* Header */
+#header {
+    background-color: #000;
+    height: 46px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#header .nav {
+    display: inline-block;
+}
+
+.nav > li {
+    position: relative;
+    display: inline-block;
+}
+
+
+.nav li {
+    list-style: none;
+}
+
+.nav > li > a {
+    text-transform: uppercase;
+}
+
+.nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+.nav .subnav li:hover a ,
+.nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+.nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav li:hover .subnav {
+    display: block;
+}
+
+.nav .subnav a {
+    color: #000;
+    font-size: 15px;
+    line-height: 38px;
+    padding: 0 15px;
+}
+
+.nar-down {
+    font-size: 12px;
+}
+
+.search {
+    float:right;
+    display: inline;
+}
+
+.search .icon-search {
+    font-size: 15px;
+    color: white;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+.search:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+/* Slider */
+#slider {
+    background: url('./../Images/slider2.jpg') top center / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+}
+
+#slider .text-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 47px;
+}
+
+#slider .header-content {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+}
+
+#slider .text-des {
+    margin-top: 25px;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+/* Content */
+#content  {
+
+}
+
+/* Band Content */
+#content .content-section {
+    padding: 74px 0px 112px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+    text-align: center;
+}
+
+.content-section .header-section {
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.content-section .sub-header-section {
+    margin-top: 25px;
+    opacity: 0.60;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.content-section .about-text {
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.member-list {
+    margin-top: 47px;
+}
+
+.member-list .img-member {
+    width: 60%;
+}
+
+.member-list .band-member {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/* Tour Content */
+.tour-section {
+    background-color: #000;
+    color: #fff;
+}
+
+.tour-section .ticket-list {
+    margin-top: 32px;
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+}
+
+.ticket-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 16px;
+    color: #757575;
+    font-size: 15px;
+    list-style: none;
+}
+
+.ticket-list .quantity {
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 16px;
+    padding: 3px 8px;
+    display: inline-block;
+
+}
+
+.ticket-list .count-tickket {
+    float: right;
+    background-color: #000;
+    border-radius: 50%;
+    width: 24px;
+    text-align: center;
+    color: #fff;
+    margin-top: -3px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.tour-section .tour-list {
+    margin-top: 32px;
+}
+
+.tour-list .tour-img {
+    width: 100%;
+    display: block;
+}
+
+.tour-list .tour-img:hover {
+    opacity: 0.6;
+}
+
+.tour-list .tour-content {
+    padding: 0px 16px;
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+}
+
+.tour-list .heading-tour {
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.tour-list .tour-date {
+    opacity: 0.6;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.tour-list .tour-desc {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Contact */
+.content-section .contact-content {
+    margin-top: 47px;
+}
+
+.contact-content .contact-info {
+    font-size: 18px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.contact-info .icon-contact {
+    width: 30px;
+    display: inline-block;
+}
+
+.from-control {
+    padding: 11px 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.map-location .img-map {
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+/* Footer */
+#footer {
+    padding: 64px 0 64px;
+    text-align: center;
+}
+
+.social-link .icon-social {
+    font-size: 24px;
+    opacity: 0.6;
+}
+
+#footer .contact-info a:hover,
+.social-link .icon-social:hover {
+    opacity: 0.4;
+}
+
+#footer .contact-info {
+    margin-top: 15px;
+    font-size: 15px;
+    opacity: 0.6;
+}
