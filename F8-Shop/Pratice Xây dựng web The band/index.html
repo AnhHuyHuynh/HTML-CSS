@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>The Band</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./Access/Images/favicon.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="./Access/Css/main.css">
     <link rel="stylesheet" href="./Access/Fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./Access/Css/main.css">
+    <link rel="stylesheet" href="./Access/Css/responsive.css">
 </head>
 
 <body>
@@ -15,7 +18,7 @@
         <!-- Bengin header -->
         <div id="header">
             <!-- Bengin nav -->
-            <ul class="nav">
+            <ul id="nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#band">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
@@ -34,6 +37,10 @@
             <!-- End nav -->
             <div class="search">
                 <i class="icon-search ti-search"></i>
+            </div>
+            <!-- Menu mobile -->
+            <div id="menu-mobile" class="menu-mobile-btn">
+                <i class="icon__mobile-menu ti-menu"></i>
             </div>
         </div>
         <!-- End header -->
@@ -62,15 +69,15 @@
                     consequat.
                 </p>
                 <div class="row member-list">
-                    <div class="col col-third text-center">
+                    <div class="col col-third s-coll-full mt-30 text-center">
                         <h2 class="band-member">Name</h2>
                         <img src="./Access/Images/member1.jpg" alt="" class="img-member">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="col col-third s-coll-full mt-30 text-center">
                         <h2 class="band-member">Name</h2>
                         <img src="./Access/Images/member1.jpg" alt="" class="img-member">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="col col-third s-coll-full mt-30 text-center">
                         <h2 class="band-member">Name</h2>
                         <img src="./Access/Images/member1.jpg" alt="" class="img-member">
                     </div>
@@ -88,31 +95,31 @@
                     </ul>
 
                     <div class="row tour-list">
-                        <div class="col col-third">
+                        <div class="col col-third mt-16 s-coll-full">
                             <img src="./Access/Images/place1.jpg"  alt="" class="tour-img">
                             <div class="tour-content">
                                 <h2 class="heading-tour">New York</h2>
                                 <p class="tour-date">Fri 27 Nov 2016</p>
                                 <p class="tour-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn">Buy Tickkets</button>
+                                <button class="btn s-full-width">Buy Tickkets</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third mt-16 s-coll-full">
                             <img src="./Access/Images/place2.jpg"  alt="" class="tour-img">
                             <div class="tour-content">
                                 <h2 class="heading-tour">Paris</h2>
                                 <p class="tour-date">Sat 28 Nov 2016</p>
                                 <p class="tour-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn">Buy Tickkets</button>
+                                <button class="btn s-full-width">Buy Tickkets</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third mt-16 s-coll-full">
                             <img src="./Access/Images/place3.jpg" alt="" class="tour-img">
                             <div class="tour-content">
                                 <h2 class="heading-tour">San Francisco</h2>
                                 <p class="tour-date">Sun 29 Nov 2016</p>
                                 <p class="tour-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn">Buy Tickkets</button>
+                                <button class="btn s-full-width">Buy Tickkets</button>
                             </div>
                         </div>
                     </div>
@@ -123,19 +130,19 @@
                 <h2 class="header-section">CONTACT</h2>
                 <p class="sub-header-section">Fan? Drop a note!</p>
                 <div class="row contact-content">
-                    <div class="col col-half contact-info">
+                    <div class="col col-half s-coll-full contact-info">
                         <p><i class="icon-contact ti-location-pin"></i>Chicago, US</p>
-                        <p><i class="icon-contact ti-mobile"></i>Phone: +00 151515</p>
-                        <p><i class="icon-contact ti-email"></i>Email: mail@mail.com</p>
+                        <p><i class="icon-contact ti-mobile"></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p><i class="icon-contact ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
                     </div>
-                    <div class="col col-half">
+                    <div class="col col-half mt-16 s-mt-32  s-coll-full">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-coll-full">
                                     <input type="text" required placeholder="Name" class="from-control" name="" id="">
                                 </div>
-                                <div class="col col-half">
-                                    <input type="email" required placeholder="Email" class="from-control" name="" id="">
+                                <div class="col col-half s-coll-full">
+                                    <input type="email" required placeholder="Email" class="from-control s-mt-8" name="" id="">
                                 </div>
                             </div>
                             <div class="row">
@@ -143,7 +150,7 @@
                                     <input type="text" required placeholder="Message" class="from-control" name="" id="">
                                 </div>
                             </div>
-                            <input type="submit" class="btn mt-16 pull-right" value="SEND">
+                            <input type="submit" class="btn mt-16 pull-right s-full-width" value="SEND">
                         </form>
                     </div>
                 </div>
@@ -169,6 +176,39 @@
         </div>
     </div>
     <!-- End main -->
+    <script>
+        var header = document.getElementById('header');
+        var menuHeader = document.getElementById('menu-mobile');
+        var menuHeight = header.clientHeight;
+
+        // open menu mobile
+        menuHeader.addEventListener('click',function () {
+            var isClose = header.clientHeight === menuHeight;
+            if(isClose) {
+                header.style.height = 'auto'
+            }
+            else {
+                header.style.height = null;
+            }
+        })
+
+        // click tag a in menu mobile
+        var links = document.querySelectorAll('#nav li a[href*="#"]');
+
+        links.forEach(link => {
+            console.log(link)
+            link.addEventListener('click',function (event) {
+                var IsmenuParent = link.nextElementSibling && link.nextElementSibling.classList.contains('subnav');
+                if(IsmenuParent) {
+                    event.preventDefault();
+                }
+                else {
+                    header.style.height = null;
+                }
+            })
+        });
+
+    </script>
 </body>
 
 </html>
